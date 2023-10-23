@@ -30,7 +30,7 @@ class Program
 
             PrintCard(cards);
 
-            Console.WriteLine("Enter a number to mark (replace) with X (or type 'exit' to quit): ");
+            Console.WriteLine("Enter the number rolled (or type 'exit' to quit): ");
             string input = Console.ReadLine();
 
             if (input.ToLower() == "exit")
