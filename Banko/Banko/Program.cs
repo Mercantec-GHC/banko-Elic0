@@ -1,34 +1,12 @@
-﻿Random rnd = new Random();
-int totalNumbers = 0;
+﻿int[] card1Row1 = { 12, 22, 44, 64, 86 };
+int[] card1Row2 = { 23, 35, 53, 67, 87 };
+int[] card1Row3 = { 5, 39, 47, 55, 78 };
 
-for (int horizontalRow = 1; horizontalRow <= 3; horizontalRow++)
-{
-    Console.WriteLine($"Horizontal Row {horizontalRow}");
+int[] card2Row1 = { 14, 40, 50, 76, 86 };
+int[] card2Row2 = { 15, 33, 47, 68, 87 };
+int[] card2Row3 = { 7, 19, 29, 49, 58 };
 
-    for (int row = 1; row <= 3; row++)
-    {
-        int heightOfCard = rnd.Next(1, 4); // Generate a random number between 1 and 3
-        totalNumbers += heightOfCard;
+int[] card3Row1 = { 21, 31, 41, 60, 75 };
+int[] card3Row2 = { 14, 36, 54, 76, 87 };
+int[] card3Row3 = { 8, 27, 58, 67, 77 };
 
-        int minValue = row * 10 - 9; // Calculate the minimum value based on the row
-        int maxValue = row * 10;      // Calculate the maximum value based on the row
-
-        for (int i = 0; i < heightOfCard; i++)
-        {
-            int randomNumber = rnd.Next(minValue, maxValue);
-            Console.WriteLine(randomNumber);
-        }
-    }
-
-    // Ensure each horizontal row has exactly 5 numbers
-    while (totalNumbers < 5)
-    {
-        int rowToAdjust = rnd.Next(1, 10); // Randomly select a vertical row to add an extra number
-        int minValue = rowToAdjust * 10 - 9;
-        int maxValue = rowToAdjust * 10;
-        int randomNumber = rnd.Next(minValue, maxValue);
-        Console.WriteLine(randomNumber);
-        totalNumbers++;
-    }
-    totalNumbers = 0;
-}
