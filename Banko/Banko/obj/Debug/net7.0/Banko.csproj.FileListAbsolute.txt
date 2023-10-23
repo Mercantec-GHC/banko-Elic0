@@ -12,3 +12,17 @@ C:\Users\charl\Desktop\Banko\Banko\obj\Debug\net7.0\refint\Banko.dll
 C:\Users\charl\Desktop\Banko\Banko\obj\Debug\net7.0\Banko.pdb
 C:\Users\charl\Desktop\Banko\Banko\obj\Debug\net7.0\Banko.genruntimeconfig.cache
 C:\Users\charl\Desktop\Banko\Banko\obj\Debug\net7.0\ref\Banko.dll
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\bin\Debug\net7.0\Banko.exe
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\bin\Debug\net7.0\Banko.deps.json
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\bin\Debug\net7.0\Banko.runtimeconfig.json
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\bin\Debug\net7.0\Banko.dll
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\bin\Debug\net7.0\Banko.pdb
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\Banko.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\Banko.AssemblyInfoInputs.cache
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\Banko.AssemblyInfo.cs
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\Banko.csproj.CoreCompileInputs.cache
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\Banko.dll
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\refint\Banko.dll
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\Banko.pdb
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\Banko.genruntimeconfig.cache
+C:\Users\charl\Desktop\banko-Elic0\Banko\Banko\obj\Debug\net7.0\ref\Banko.dll
