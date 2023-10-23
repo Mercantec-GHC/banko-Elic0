@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 class Program
 {
@@ -25,6 +26,7 @@ class Program
 
         while (true)
         {
+            Console.Clear(); // Clear the console
 
             PrintCard(cards);
 
