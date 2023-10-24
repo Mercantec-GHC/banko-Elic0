@@ -16,10 +16,6 @@ class Program
         int[] card3Row2 = { 14, 36, 54, 76, 87 };
         int[] card3Row3 = { 8, 27, 58, 67, 77 };
 
-        int[] card4Row1 = { 21, 31, 41, 60, 75 };
-        int[] card4Row2 = { 14, 36, 54, 76, 87 };
-        int[] card4Row3 = { 8, 27, 58, 67, 77 };
-
         int[][][] cards = new int[][][]
         {
             new int[][] { card1Row1, card1Row2, card1Row3 },
