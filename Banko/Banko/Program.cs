@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 
 class Program
 {
@@ -26,8 +25,7 @@ class Program
 
         while (true)
         {
-            Console.Clear(); // Clear the console
-
+            Console.Clear();
             PrintCard(cards);
 
             Console.WriteLine("Enter the number rolled (or type 'exit' to quit): ");
@@ -39,7 +37,8 @@ class Program
             int numberToMark;
             if (int.TryParse(input, out numberToMark))
             {
-                bool marked = false; // Flag to indicate if the number was found
+                bool marked = false;
+                string cardNumber = "";
                 for (int cardIndex = 0; cardIndex < cards.Length; cardIndex++)
                 {
                     for (int row = 0; row < cards[cardIndex].Length; row++)
@@ -48,8 +47,9 @@ class Program
                         {
                             if (cards[cardIndex][row][col] == numberToMark)
                             {
-                                cards[cardIndex][row][col] = -1; // Replace with -1 (or any other value/character)
+                                cards[cardIndex][row][col] = -1;
                                 marked = true;
+                                cardNumber = (cardIndex + 1).ToString();
                             }
                         }
                     }
@@ -57,24 +57,27 @@ class Program
 
                 if (marked)
                 {
-                    Console.WriteLine("Number marked successfully.");
+                    Console.WriteLine($"{input} was found on card {cardNumber}.");
                 }
                 else
                 {
-                    Console.WriteLine("Number not found on the card.");
+                    Console.WriteLine("Number not found on your cards.");
                 }
+                Thread.Sleep(1500);
             }
             else
             {
                 Console.WriteLine("Invalid input. Please enter a number or 'exit'.");
+                Thread.Sleep(10000);
             }
         }
     }
-
     static void PrintCard(int[][][] cards)
     {
+        Console.WriteLine("Card ID: Charlie");
         for (int cardIndex = 0; cardIndex < cards.Length; cardIndex++)
         {
+            Console.SetCursorPosition(0, cardIndex * 6);
             Console.WriteLine($"Card {cardIndex + 1}:");
             for (int row = 0; row < cards[cardIndex].Length; row++)
             {
@@ -91,7 +94,6 @@ class Program
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine();
         }
     }
 }
