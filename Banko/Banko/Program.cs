@@ -16,6 +16,10 @@ class Program
         int[] card3Row2 = { 14, 36, 54, 76, 87 };
         int[] card3Row3 = { 8, 27, 58, 67, 77 };
 
+        int[] card4Row1 = { 21, 31, 41, 60, 75 };
+        int[] card4Row2 = { 14, 36, 54, 76, 87 };
+        int[] card4Row3 = { 8, 27, 58, 67, 77 };
+
         int[][][] cards = new int[][][]
         {
             new int[][] { card1Row1, card1Row2, card1Row3 },
@@ -63,22 +67,44 @@ class Program
                 {
                     Console.WriteLine("Number not found on your cards.");
                 }
-                Thread.Sleep(1500);
+                Thread.Sleep(1000);
             }
             else
             {
                 Console.WriteLine("Invalid input. Please enter a number or 'exit'.");
-                Thread.Sleep(10000);
+                Thread.Sleep(1000);
             }
         }
     }
     static void PrintCard(int[][][] cards)
     {
-        Console.WriteLine("Card ID: Charlie");
         for (int cardIndex = 0; cardIndex < cards.Length; cardIndex++)
         {
+            bool isCardMarked = true;
+            bool[] isRowMarked = new bool[3];
+            for (int row = 0; row < cards[cardIndex].Length; row++)
+            {
+                bool isRowFull = true;
+                for (int col = 0; col < cards[cardIndex][row].Length; col++)
+                {
+                    if (cards[cardIndex][row][col] != -1)
+                    {
+                        isRowFull = false;
+                        isCardMarked = false;
+                        isRowMarked[row] = false;
+                    }
+                }
+
+                if (isRowFull)
+                {
+                    isRowMarked[row] = true;
+                }
+            }
+
             Console.SetCursorPosition(0, cardIndex * 6);
+            Console.WriteLine("Card ID: Charlie");
             Console.WriteLine($"Card {cardIndex + 1}:");
+
             for (int row = 0; row < cards[cardIndex].Length; row++)
             {
                 for (int col = 0; col < cards[cardIndex][row].Length; col++)
@@ -93,6 +119,22 @@ class Program
                     }
                 }
                 Console.WriteLine();
+            }
+
+            if (isCardMarked)
+            {
+                Console.WriteLine($"Card {cardIndex + 1} is fully marked!");
+                Console.WriteLine("");
+            }
+            else
+            {
+                for (int row = 0; row < isRowMarked.Length; row++)
+                {
+                    if (isRowMarked[row])
+                    {
+                        Console.Write($"Row {row + 1} on Card {cardIndex + 1} is fully marked! ");
+                    }
+                }
             }
         }
     }
