@@ -4,17 +4,50 @@ class Program
 {
     static void Main()
     {
-        int[] card1Row1 = { 12, 22, 44, 64, 86 };
-        int[] card1Row2 = { 23, 35, 53, 67, 87 };
-        int[] card1Row3 = { 5, 39, 47, 55, 78 };
+        int[] card1Row1 = {12,22,44,64,86 };
+        int[] card1Row2 = {23,35,53,67,87 };
+        int[] card1Row3 = {5,39,47,55,78 };
+        string card1 = "Charlie";
 
-        int[] card2Row1 = { 14, 40, 50, 76, 86 };
-        int[] card2Row2 = { 15, 33, 47, 68, 87 };
-        int[] card2Row3 = { 7, 19, 29, 49, 58 };
+        int[] card2Row1 = {14,40,50,76,86 };
+        int[] card2Row2 = {15,33,47,68,87 };
+        int[] card2Row3 = {7,19,29,49,58 };
+        string card2 = "Charlie";
 
-        int[] card3Row1 = { 21, 31, 41, 60, 75 };
-        int[] card3Row2 = { 14, 36, 54, 76, 87 };
-        int[] card3Row3 = { 8, 27, 58, 67, 77 };
+        int[] card3Row1 = {21,31,41,60,75 };
+        int[] card3Row2 = {14,36,54,76,87 };
+        int[] card3Row3 = {8,27,58,67,77 };
+        string card3 = "Charlie";
+
+        int[] card4Row1 = {5,41,52,73,82 };
+        int[] card4Row2 = {33,42,55,65,76 };
+        int[] card4Row3 = {18,25,49,68,85 };
+        string card4 = "Chloe";
+
+        int[] card5Row1 = {2,20,60,70,87 };
+        int[] card5Row2 = {17,22,34,72,88 };
+        int[] card5Row3 = {39,49,58,62,73 };
+        string card5 = "Chloe";
+
+        int[] card6Row1 = {5,22,33,40,80 };
+        int[] card6Row2 = {16,24,36,57,66 };
+        int[] card6Row3 = {9,27,59,74,85 };
+        string card6 = "Chloe";
+
+        int[] card7Row1 = {11,30,43,61,73 };
+        int[] card7Row2 = {8,26,32,75,86 };
+        int[] card7Row3 = {39,56,66,77,89 };
+        string card7 = "Jørn";
+
+        int[] card8Row1 = {11,47,56,60,84 };
+        int[] card8Row2 = {6,13,38,57,87 };
+        int[] card8Row3 = {29,39,49,79,89 };
+        string card8 = "Jørn";
+
+        int[] card9Row1 = {15,22,45,61,73 };
+        int[] card9Row2 = {3,34,47,68,85 };
+        int[] card9Row3 = {5,19,37,59,69 };
+        string card9 = "Jørn";
 
         int[][][] cards = new int[][][]
         {
@@ -26,7 +59,7 @@ class Program
         while (true)
         {
             Console.Clear();
-            PrintCard(cards);
+            PrintCard(cards, new string[] { card1, card2, card3 });
 
             Console.WriteLine("Enter the number rolled (or type 'exit' to quit): ");
             string input = Console.ReadLine();
@@ -54,7 +87,6 @@ class Program
                         }
                     }
                 }
-
                 if (marked)
                 {
                     Console.WriteLine($"{input} was found on card {cardNumber}.");
@@ -72,8 +104,11 @@ class Program
             }
         }
     }
-    static void PrintCard(int[][][] cards)
+
+    static void PrintCard(int[][][] cards, string[] cardLabels)
     {
+        int rowOffset = 0; // To add spacing between cards
+
         for (int cardIndex = 0; cardIndex < cards.Length; cardIndex++)
         {
             bool isCardMarked = true;
@@ -90,15 +125,14 @@ class Program
                         isRowMarked[row] = false;
                     }
                 }
-
                 if (isRowFull)
                 {
                     isRowMarked[row] = true;
                 }
             }
 
-            Console.SetCursorPosition(0, cardIndex * 6);
-            Console.WriteLine("Card ID: Charlie");
+            Console.SetCursorPosition(0, rowOffset);
+            Console.WriteLine($"Card ID: {cardLabels[cardIndex]}");
             Console.WriteLine($"Card {cardIndex + 1}:");
 
             for (int row = 0; row < cards[cardIndex].Length; row++)
@@ -116,11 +150,9 @@ class Program
                 }
                 Console.WriteLine();
             }
-
             if (isCardMarked)
             {
                 Console.WriteLine($"Card {cardIndex + 1} is fully marked!");
-                Console.WriteLine("");
             }
             else
             {
@@ -132,6 +164,7 @@ class Program
                     }
                 }
             }
+            rowOffset += 8; // Adjust spacing between cards
         }
     }
 }
