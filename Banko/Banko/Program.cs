@@ -7,59 +7,63 @@ class Program
         int[] card1Row1 = {12,22,44,64,86 };
         int[] card1Row2 = {23,35,53,67,87 };
         int[] card1Row3 = {5,39,47,55,78 };
-        string card1 = "Charlie";
+        string card1 = "Charlie1";
 
         int[] card2Row1 = {14,40,50,76,86 };
         int[] card2Row2 = {15,33,47,68,87 };
         int[] card2Row3 = {7,19,29,49,58 };
-        string card2 = "Charlie";
+        string card2 = "Charlie2";
 
         int[] card3Row1 = {21,31,41,60,75 };
         int[] card3Row2 = {14,36,54,76,87 };
         int[] card3Row3 = {8,27,58,67,77 };
-        string card3 = "Charlie";
+        string card3 = "Charlie3";
 
         int[] card4Row1 = {5,41,52,73,82 };
         int[] card4Row2 = {33,42,55,65,76 };
         int[] card4Row3 = {18,25,49,68,85 };
-        string card4 = "Chloe";
+        string card4 = "Chloe1";
 
         int[] card5Row1 = {2,20,60,70,87 };
         int[] card5Row2 = {17,22,34,72,88 };
         int[] card5Row3 = {39,49,58,62,73 };
-        string card5 = "Chloe";
+        string card5 = "Chloe2";
 
+        /*
+        extra rækker brugt i et andet dokument, tjek README.mdl for mere info 
         int[] card6Row1 = {5,22,33,40,80 };
         int[] card6Row2 = {16,24,36,57,66 };
         int[] card6Row3 = {9,27,59,74,85 };
-        string card6 = "Chloe";
+        string card6 = "Chloe3";
 
         int[] card7Row1 = {11,30,43,61,73 };
         int[] card7Row2 = {8,26,32,75,86 };
         int[] card7Row3 = {39,56,66,77,89 };
-        string card7 = "Jørn";
+        string card7 = "Jørn1";
 
         int[] card8Row1 = {11,47,56,60,84 };
         int[] card8Row2 = {6,13,38,57,87 };
         int[] card8Row3 = {29,39,49,79,89 };
-        string card8 = "Jørn";
+        string card8 = "Jørn2";
 
         int[] card9Row1 = {15,22,45,61,73 };
         int[] card9Row2 = {3,34,47,68,85 };
         int[] card9Row3 = {5,19,37,59,69 };
-        string card9 = "Jørn";
+        string card9 = "Jørn3";*/
 
         int[][][] cards = new int[][][]
         {
             new int[][] { card1Row1, card1Row2, card1Row3 },
             new int[][] { card2Row1, card2Row2, card2Row3 },
-            new int[][] { card3Row1, card3Row2, card3Row3 }
+            new int[][] { card3Row1, card3Row2, card3Row3 },
+            new int[][] { card4Row1, card4Row2, card4Row3 },
+            new int[][] { card5Row1, card5Row2, card5Row3 },
         };
 
         while (true)
         {
             Console.Clear();
-            PrintCard(cards, new string[] { card1, card2, card3 });
+            PrintCard(cards, new string[] { card1, card2, card3, card4, card5, });
 
             Console.WriteLine("Enter the number rolled (or type 'exit' to quit): ");
             string input = Console.ReadLine();
@@ -133,7 +137,6 @@ class Program
 
             Console.SetCursorPosition(0, rowOffset);
             Console.WriteLine($"Card ID: {cardLabels[cardIndex]}");
-            Console.WriteLine($"Card {cardIndex + 1}:");
 
             for (int row = 0; row < cards[cardIndex].Length; row++)
             {
@@ -164,7 +167,7 @@ class Program
                     }
                 }
             }
-            rowOffset += 8; // Adjust spacing between cards
+            rowOffset += 5; // Adjust spacing between cards
         }
     }
 }
