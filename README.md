@@ -8,8 +8,6 @@ til at kigge gennem dine plader for dig, og fortælle dig hvornår du har banko.
 
 jeg har skrevet et program der gør lige netop dette, dog er der et lille problem,
 når det er at jeg tilføjer flere plader så er der noget med mit layout, som ødelægger det hele, 
-det vil sige at lige nu kan jeg kun have 4 plader per program jeg kører.
+det vil sige at lige nu kan jeg kun have 5 plader per program jeg kører.
 
-kan ikke rigtigt finde en workaround til dette, dog kan jeg forkorte noget af det der står i koden,
-som bliver printet, dette vil måske gøre at der kan være en femte plade.
-
+har prøvet at lave nogle ændringer gennem koden for at der kunne være flere, men kunne ikke helt finde en løsning.
