@@ -30,7 +30,7 @@ class Program
         string card5 = "Chloe2";
 
         /*
-        extra rækker brugt i et andet dokument, tjek README.mdl for mere info 
+        extra rækker brugt i et andet dokument, tjek README.md for mere info 
         int[] card6Row1 = {5,22,33,40,80 };
         int[] card6Row2 = {16,24,36,57,66 };
         int[] card6Row3 = {9,27,59,74,85 };
