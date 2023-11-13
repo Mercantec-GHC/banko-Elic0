@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\charl\\Desktop\\Banko2\\Banko2\\Banko2.csproj": {}
+    "C:\\Users\\charl\\Desktop\\banko-Elic0\\Banko2\\Banko2\\Banko2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\charl\\Desktop\\Banko2\\Banko2\\Banko2.csproj": {
+    "C:\\Users\\charl\\Desktop\\banko-Elic0\\Banko2\\Banko2\\Banko2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charl\\Desktop\\Banko2\\Banko2\\Banko2.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\Desktop\\banko-Elic0\\Banko2\\Banko2\\Banko2.csproj",
         "projectName": "Banko2",
-        "projectPath": "C:\\Users\\charl\\Desktop\\Banko2\\Banko2\\Banko2.csproj",
+        "projectPath": "C:\\Users\\charl\\Desktop\\banko-Elic0\\Banko2\\Banko2\\Banko2.csproj",
         "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charl\\Desktop\\Banko2\\Banko2\\obj\\",
+        "outputPath": "C:\\Users\\charl\\Desktop\\banko-Elic0\\Banko2\\Banko2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

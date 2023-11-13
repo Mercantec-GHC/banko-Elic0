@@ -4,30 +4,30 @@ class Program
 {
     static void Main()
     {
-        int[] card1Row1 = { 5, 22, 33, 40, 80 };
-        int[] card1Row2 = { 16, 24, 36, 57, 66 };
-        int[] card1Row3 = { 9, 27, 59, 74, 85 };
+        int[] card1Row1 = {5, 22, 33, 40, 80 };
+        int[] card1Row2 = {16, 24, 36, 57, 66 };
+        int[] card1Row3 = {9, 27, 59, 74, 85 };
         string card1 = "Chloe3";
 
-        int[] card2Row1 = { 11, 30, 43, 61, 73 };
-        int[] card2Row2 = { 8, 26, 32, 75, 86 };
-        int[] card2Row3 = { 39, 56, 66, 77, 89 };
+        int[] card2Row1 = {11, 30, 43, 61, 73 };
+        int[] card2Row2 = {8, 26, 32, 75, 86 };
+        int[] card2Row3 = {39, 56, 66, 77, 89 };
         string card2 = "Jørn1";
 
-        int[] card3Row1 = { 11, 47, 56, 60, 84 };
-        int[] card3Row2 = { 6, 13, 38, 57, 87 };
-        int[] card3Row3 = { 29, 39, 49, 79, 89 };
+        int[] card3Row1 = {11, 47, 56, 60, 84 };
+        int[] card3Row2 = {6, 13, 38, 57, 87 };
+        int[] card3Row3 = {29, 39, 49, 79, 89 };
         string card3 = "Jørn2";
 
-        int[] card4Row1 = { 15, 22, 45, 61, 73 };
-        int[] card4Row2 = { 3, 34, 47, 68, 85 };
-        int[] card4Row3 = { 5, 19, 37, 59, 69 };
+        int[] card4Row1 = {15, 22, 45, 61, 73 };
+        int[] card4Row2 = {3, 34, 47, 68, 85 };
+        int[] card4Row3 = {5, 19, 37, 59, 69 };
         string card4 = "Jørn3";
 
-        int[] card5Row1 = {1, 46, 60, 71, 83};
-        int[] card5Row2 = {11, 28, 35, 55, 61};
-        int[] card5Row3 = {7, 29, 38, 56, 88};
-        string card5 = "Card1";
+        int[] card5Row1 = {10, 41, 50, 61, 73 };
+        int[] card5Row2 = {2, 24, 34, 74, 81 };
+        int[] card5Row3 = {8, 18, 36, 49, 78 };
+        string card5 = "Cardi B1";
 
         int[][][] cards = new int[][][]
         {

@@ -1,0 +1,14 @@
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\bin\Debug\net7.0\Banko2.exe
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\bin\Debug\net7.0\Banko2.deps.json
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\bin\Debug\net7.0\Banko2.runtimeconfig.json
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\bin\Debug\net7.0\Banko2.dll
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\bin\Debug\net7.0\Banko2.pdb
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\Banko2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\Banko2.AssemblyInfoInputs.cache
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\Banko2.AssemblyInfo.cs
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\Banko2.csproj.CoreCompileInputs.cache
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\Banko2.dll
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\refint\Banko2.dll
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\Banko2.pdb
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\Banko2.genruntimeconfig.cache
+C:\Users\charl\Desktop\banko-Elic0\Banko2\Banko2\obj\Debug\net7.0\ref\Banko2.dll
